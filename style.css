@@ -1,0 +1,232 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.carousel-inner img{
+    max-height: 560px;
+}
+
+#carouselExampleControls{
+    padding: 0;
+}
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.col-sm-4 {
+    padding: 0;
+}
+
+.text_hover{
+    margin: 10% 0 0 12%;
+    width: 75%;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(189,189,189,0.7);
+    border-radius: 15px 15px;
+    transition: 0.5s ease;
+}
+
+.fellows h2{
+    color: #949494;
+    font-size: 2em;
+    text-align: center;
+    margin: 3% 0;
+}
+
+.text_hover, .text_no_hover p{
+    padding-top: 6%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.text_no_hover{
+    margin: 10% 0 0 12%;
+    width: 75%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: rgba(189,189,189,0.7);
+    border-radius: 15px 15px;
+    transition: 0.5s ease;
+}
+
+.hover:hover .text_hover{
+    color: white;
+    opacity: 1;
+}
+
+.hover {
+    display: flex;
+    justify-content: flex-start;
+}
+
+hr{
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+
+
+
+section h2{
+    text-align: center;
+    color: #949494;
+    margin: 50px;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 10% 0 0;
+    margin-bottom: 2%;
+}
+
+.form-control{
+    width: 100%;
+    margin: 0;
+}
+
+.contact h2{
+    float: left;
+    color: #949494;
+    font-size: 1.6em;
+    margin: 0 0 0 2%;
+}
+
+
+.page-footer{
+    background-color: #424242;
+    margin: 0;
+    padding-top: 0;
+}
+.list-unstyled{
+    width: 60%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-top: 3%;
+
+}
+
+.container{
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.row{
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-unstyled li{
+    height: 30%;
+    text-align: center;
+    margin-left: -9%;
+}
+
+.list-unstyled a{
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 3% 10%;
+
+}
+
+.links a{
+    font-weight: bold;
+    color: white;
+}
+
+@media only screen and (min-width: 961px){
+    .most{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    form h2{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container-fluid{
+        justify-content: space-around;
+    }
+
+    .fellows h2{
+        font-size: 1.4em;
+        margin: 2% 5%;
+    }
+
+    .row{
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center !important;
+    }
+
+
+    .list-unstyled{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center !important;
+    }
+
+    .list-unstyled li{
+        margin: 0;
+        padding: 0;
+        height: auto;
+        text-align: center !important;
+    }
+
+    .list-unstyled a{
+        text-align: center !important;
+        display: block;
+    }
+
+    .links{
+        width: 100%;
+        padding: 0;
+        margin-top: 4%;
+    }
+
+    form{
+        margin-top: 15%;
+    }
+
+    .button{
+        margin-right: 5%;
+    }
+
+   
+}
